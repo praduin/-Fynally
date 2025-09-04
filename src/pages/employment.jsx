@@ -79,12 +79,12 @@ function EmploymentPage() {
           Need help with your application or want to know more about our hiring
           process?
         </p>
-        <a
+        <Link
           href="/hr"
           className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors shadow"
         >
           Contact HR
-        </a>
+        </Link>
       </div>
     </div>
   );
