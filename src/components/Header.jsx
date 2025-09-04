@@ -97,7 +97,7 @@ function Header() {
                 setActiveNav(item);
                 setMenuOpen(false);
                 item === "Home"
-                  ? navigate(`/home`)
+                  ? navigate(`/`)
                   : navigate(`/${item.toLowerCase().replace(/\s+/g, "-")}`);
               }}
             >
