@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Registered() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-200 flex flex-col items-center py-12 px-4">
@@ -31,12 +33,12 @@ function Registered() {
           Thank you for joining FYNALLY. Your account has been created and you
           can now access all our courses, programs, and community features.
         </p>
-        <a
-          href="/home"
+        <Link
+          to="/"
           className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-lg shadow transition-colors"
         >
           Go to home
-        </a>
+        </Link>
       </div>
     </div>
   );
