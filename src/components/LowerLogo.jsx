@@ -22,7 +22,7 @@ export default function Journey() {
             <div className="bg-teal-900 text-white p-2 sm:p-3 rounded-full flex items-center justify-center mx-auto">
               {step.icon}
             </div>
-            <span className="font-medium text-base sm:text-lg mt-1 sm:mt-0">
+            <span className=" text-base mt-1 sm:mt-0">
               {step.label}
             </span>
             {idx !== steps.length - 1 && (

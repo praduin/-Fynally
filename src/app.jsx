@@ -8,7 +8,7 @@ import "./app.css";
 import Contact from "./pages/Student-Resources.jsx";
 import Programs from "./pages/learning.jsx";
 import Logo from "./components/Logo.jsx";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 
 import Title from "./components/title.jsx";
@@ -21,16 +21,16 @@ import ImploymentPage from "./pages/employment.jsx";
 import ContactHRPage from "./pages/registerpage.jsx";
 import GetStarted from "./pages/getstarted.jsx";
 import Registered from "./pages/registered.jsx";
+import Layout from "./pages/Layout.jsx";
 export function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="w-screen bg-gray-100 flex flex-col min-h-screen">
-      <div className="w-screen mx-auto flex flex-col min-h-screen">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
           <Route
+            index
             path="/home"
             element={
               <main className="flex flex-col-reverse lg:flex-row items-center justify-center flex-grow">
@@ -52,11 +52,8 @@ export function App() {
           <Route path="/get-started" element={<GetStarted />} />
           <Route path="/register" element={<Registered />} />
           <Route path="/hr" element={<ContactHRPage />} />
-        </Routes>
-        <div className="mt-auto w-full">
-          <Footers />
-        </div>
-      </div>
-    </div>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }

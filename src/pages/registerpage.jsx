@@ -55,13 +55,13 @@ function ContactHRPage() {
             href="mailto:careers@fynally.com"
             className="text-teal-600 hover:underline"
           >
-            careers@fynally.com
+            praduin sharma
           </a>
         </p>
         <p className="text-gray-700">
           Phone:{" "}
           <a href="tel:+1234567890" className="text-teal-600 hover:underline">
-            +1 234 567 890
+            +91 8865989153
           </a>
         </p>
         <p className="text-gray-700">
