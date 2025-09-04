@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const jobs = [
   {
     title: "Junior Frontend Developer",
@@ -80,7 +82,7 @@ function EmploymentPage() {
           process?
         </p>
         <Link
-          href="/hr"
+          to="/hr"
           className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors shadow"
         >
           Contact HR

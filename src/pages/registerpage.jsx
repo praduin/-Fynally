@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 function ContactHRPage() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50 to-teal-200 flex flex-col items-center py-12 px-4">
       <h1 className="text-4xl font-bold text-teal-800 mb-4 text-center">
@@ -41,6 +44,10 @@ function ContactHRPage() {
         <button
           type="submit"
           className="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-2 rounded-lg shadow transition-colors mt-2"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/");
+          }}
         >
           Send Message
         </button>
