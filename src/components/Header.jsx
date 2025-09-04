@@ -46,7 +46,7 @@ function Header() {
             onClick={() => {
               setActiveNav(item);
               item === "Home"
-                ? navigate(`/home`)
+                ? navigate(`/`)
                 : navigate(`/${item.toLowerCase().replace(/\s+/g, "-")}`);
             }}
           >

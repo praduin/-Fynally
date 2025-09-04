@@ -31,7 +31,6 @@ export function App() {
         <Route path="/" element={<Layout />}>
           <Route
             index
-            path="/home"
             element={
               <main className="flex flex-col-reverse lg:flex-row items-center justify-center flex-grow">
                 <div>
@@ -45,13 +44,13 @@ export function App() {
               </main>
             }
           />
-          <Route path="/student-resources" element={<Contact />} />
-          <Route path="/learning" element={<Programs />} />
-          <Route path="/internships" element={<InternshipPage />} />
-          <Route path="/employment" element={<ImploymentPage />} />
-          <Route path="/get-started" element={<GetStarted />} />
-          <Route path="/register" element={<Registered />} />
-          <Route path="/hr" element={<ContactHRPage />} />
+          <Route path="student-resources" element={<Contact />} />
+          <Route path="learning" element={<Programs />} />
+          <Route path="internships" element={<InternshipPage />} />
+          <Route path="employment" element={<ImploymentPage />} />
+          <Route path="get-started" element={<GetStarted />} />
+          <Route path="register" element={<Registered />} />
+          <Route path="hr" element={<ContactHRPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

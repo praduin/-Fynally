@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const steps = [
   {
     title: "Create Your Account",
@@ -49,12 +51,12 @@ function GetStarted() {
           </div>
         ))}
       </div>
-      <a
-        href="/register"
+      <Link
+        to={"/register"}
         className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-lg shadow transition-colors text-lg"
       >
         Create Your Free Account
-      </a>
+      </Link>
     </div>
   );
 }
