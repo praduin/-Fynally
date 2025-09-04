@@ -20,6 +20,7 @@ import RegisterPage from "./pages/registerpage.jsx";
 import ImploymentPage from "./pages/employment.jsx";
 import ContactHRPage from "./pages/registerpage.jsx";
 import GetStarted from "./pages/getstarted.jsx";
+import Registered from "./pages/registered.jsx";
 export function App() {
   const [count, setCount] = useState(0);
 
@@ -49,7 +50,7 @@ export function App() {
           <Route path="/internships" element={<InternshipPage />} />
           <Route path="/employment" element={<ImploymentPage />} />
           <Route path="/get-started" element={<GetStarted />} />
-          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/register" element={<Registered />} />
           <Route path="/hr" element={<ContactHRPage />} />
         </Routes>
         <div className="mt-auto w-full">

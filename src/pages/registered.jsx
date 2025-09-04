@@ -32,10 +32,10 @@ function Registered() {
           can now access all our courses, programs, and community features.
         </p>
         <a
-          href="/login"
+          href="/home"
           className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-lg shadow transition-colors"
         >
-          Go to Login
+          Go to home
         </a>
       </div>
     </div>
